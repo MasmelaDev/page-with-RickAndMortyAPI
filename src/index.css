@@ -70,6 +70,7 @@ body{
     width: 100%;
 }
 .card__name{
+    display: block;
     font-size: 2em;
     font-weight: 700;
     color: #52a5E0;
@@ -77,6 +78,7 @@ body{
     padding-bottom:8px ;
     margin-bottom: 20px;
     border-bottom: 1px solid #52a5E0;
+    text-decoration: none;
 }
 .card__status{
     font-size: 1.6em;
