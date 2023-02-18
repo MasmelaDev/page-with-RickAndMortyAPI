@@ -14,7 +14,7 @@ const callback = (entries, observer) => {
     .forEach((entry) => {
       if (entry.target.nodeName == "IMG") {
         const img = entry.target;
-        const src = img.getAttribute("data-lazy");
+        const src = img.dataset.src
         img.setAttribute("src", src);
         observer.unobserve(entry.target);
       }
@@ -34,9 +34,7 @@ const crearCards = (responseJson) => {
   responseJson.results.forEach((item) => {
     const image = document.createElement("img");
     image.alt = `character${item.id}-image`
-    const loadingLazy = document.createAttribute("data-lazy")
-    loadingLazy.value= item.image
-    image.setAttributeNode(loadingLazy)
+    image.dataset.src = item.image
     observer.observe(image)
 
     const name = document.createElement("a");
