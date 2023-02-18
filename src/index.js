@@ -33,6 +33,7 @@ const crearCards = (responseJson) => {
 
   responseJson.results.forEach((item) => {
     const image = document.createElement("img");
+    image.alt = `character${item.id}-image`
     const loadingLazy = document.createAttribute("data-lazy")
     loadingLazy.value= item.image
     image.setAttributeNode(loadingLazy)
