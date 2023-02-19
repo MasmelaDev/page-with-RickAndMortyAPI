@@ -13,6 +13,8 @@
 body{
     min-height: 100vh;
     background-color: #152B4A;
+    display: flex;
+    flex-direction: column;
 }
 
 .header{
@@ -42,6 +44,7 @@ body{
     flex-wrap: wrap;
     justify-content: center;
     gap: 40px;
+    margin-bottom: 20px;
 }
 
 .card{
@@ -73,6 +76,7 @@ body{
     margin-top: 22.5px;
     width: 85%;
     border-radius: 20px;
+    background-color: #808080;
 
 
 }
@@ -111,13 +115,16 @@ body{
 }
 
 .footer{
+    font-size: 10px;
+    margin-top: auto;
     background-color: #52a5E0;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 40px;
+    height: 60px;
 }
 .footer a {
+    font-size: 1.8em;
     font-family: var(--font-main);
     font-weight: 700;
     text-decoration: none;
