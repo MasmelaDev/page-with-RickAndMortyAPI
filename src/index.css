@@ -114,6 +114,24 @@ body{
     right: 20px;
 }
 
+.errorContainer{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.errorContainer__img{height: 50%;}
+.errorContainer__p{
+    height:auto;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: var(--font-header);
+    font-size: 4em;
+    color: #EFF3F5;
+}
+
+
 .footer{
     font-size: 10px;
     margin-top: auto;
